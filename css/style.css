@@ -183,4 +183,11 @@
     margin-right: 1.3rem;
   }
 }
+
+/* Small Tablet styles */
+@media screen and (min-width: 620px) {
+  .container {
+    padding: 3.5rem 10rem;
+  }
+}
 /*# sourceMappingURL=style.css.map */
