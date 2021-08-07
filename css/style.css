@@ -223,4 +223,11 @@
     font-size: .9rem;
   }
 }
+
+/* Desktop styles */
+@media screen and (min-width: 1300px) {
+  .container {
+    padding: 3.5rem 30rem;
+  }
+}
 /*# sourceMappingURL=style.css.map */
