@@ -172,4 +172,15 @@
 .attribution a:hover, .attribution a:active {
   color: #1f2f56;
 }
+
+/* Larger Mobile screen size styles */
+@media screen and (min-width: 430px) {
+  .container {
+    padding: 3.5rem 1.7rem;
+  }
+  .card-content-text .order img {
+    width: 3rem;
+    margin-right: 1.3rem;
+  }
+}
 /*# sourceMappingURL=style.css.map */
