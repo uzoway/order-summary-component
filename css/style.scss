@@ -5,6 +5,7 @@ $bright-blue: hsl(245, 75%, 52%);
 $very-pale-blue: hsl(225, 100%, 98%);
 $desaturated-blue: hsl(224, 23%, 55%);
 $dark-blue: hsl(223, 47%, 23%);
+$font-family: 'Red Hat Display', sans-serif;
 
 /* Base styles */
 
@@ -12,8 +13,105 @@ $dark-blue: hsl(223, 47%, 23%);
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-size: 16px;
+    font-family: $font-family;
 }
 
+/* Mobile styles */@at-root
 
+.container{
+    min-height: 100vh;
+    background-color: $pale-blue;
+    padding: 3rem 1.5rem;
+}
 
+.card{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 1rem;
+    overflow: hidden;
 
+    &-image{
+        height: 25vh;
+        width: 100%;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &-content{
+        padding: 1.5rem 1.2rem;
+        text-align: center;
+        background: #fff;
+
+        &-text{
+            width: 100%;
+
+            h1{
+                font-size: 1.3rem;
+                line-height: 1.1;
+                color: $dark-blue;
+                margin-bottom: 1.2rem;
+                font-weight: 900;
+                text-transform: capitalize;
+            }
+
+            p{
+                font-size: .9rem;
+                color: $desaturated-blue;
+                line-height: 1.7;
+                margin-bottom: 2rem;
+            }
+
+            .order{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: .4rem;
+                background: $very-pale-blue;
+                border-radius: .7rem;
+
+                img{
+                    width: 2.5rem;
+                }
+
+                &-text{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    text-align: left;
+
+                    h3{
+                        color: $dark-blue;
+                        font-size: .9rem;
+                    }
+
+                    p{
+                        font-size: .8rem;
+                        color: $desaturated-blue;
+                    }
+                }
+
+                .btn{
+                    border: none;
+                    outline: none;
+                    color: $bright-blue;
+                    text-decoration: underline;
+                    font-size: .8rem;
+                }
+            }
+
+            .payment{
+                display: block;
+                text-decoration: none;
+                color: #fff;
+                background: $bright-blue;
+                padding: .7rem;
+                border-radius: .5rem;
+                font-size: .8rem;
+            }
+        }
+    }
+}
