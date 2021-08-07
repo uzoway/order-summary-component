@@ -197,4 +197,30 @@
     padding: 3.5rem 15rem;
   }
 }
+
+/* Laptop styles */
+@media screen and (min-width: 1200px) {
+  .container {
+    padding: 3.5rem 25rem;
+  }
+  .card-content {
+    padding: 3rem 2.5rem;
+    width: 100%;
+  }
+  .card-content-text h1 {
+    font-size: 1.6rem;
+  }
+  .card-content-text p {
+    font-size: 1rem;
+  }
+  .card-content-text .order {
+    padding: 1.3rem .9rem;
+  }
+  .card-content-text .order h3 {
+    font-size: 1rem;
+  }
+  .card-content-text .order h3 span {
+    font-size: .9rem;
+  }
+}
 /*# sourceMappingURL=style.css.map */

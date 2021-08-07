@@ -191,3 +191,37 @@ $font-family: 'Red Hat Display', sans-serif;
         padding: 3.5rem 15rem;
     }
 }
+
+/* Laptop styles */
+@media screen and (min-width: 1200px){
+    .container {
+        padding: 3.5rem 25rem;
+    }
+
+    .card-content {
+        padding: 3rem 2.5rem;
+        width: 100%;
+
+        &-text h1 {
+            font-size: 1.6rem;
+        }
+
+        &-text p {
+            font-size: 1rem;
+        }
+
+        &-text .order {
+            padding: 1.3rem .9rem;
+
+            & h3 {
+                font-size: 1rem;
+
+                & span {
+                    font-size: .9rem;
+                }
+            }
+
+            
+        }
+    }
+}
