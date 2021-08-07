@@ -22,7 +22,11 @@ $font-family: 'Red Hat Display', sans-serif;
 .container{
     min-height: 100vh;
     background-color: $pale-blue;
-    padding: 3rem 1.5rem;
+    background-image: url('/images/pattern-background-desktop.svg');
+    background-position: top right;
+    background-size: 100% 30%;
+    background-repeat: no-repeat;
+    padding: 3.5rem 1.2rem;
 }
 
 .card{
@@ -53,7 +57,7 @@ $font-family: 'Red Hat Display', sans-serif;
                 font-size: 1.3rem;
                 line-height: 1.1;
                 color: $dark-blue;
-                margin-bottom: 1.2rem;
+                margin-bottom: 1rem;
                 font-weight: 900;
                 text-transform: capitalize;
             }
@@ -68,29 +72,26 @@ $font-family: 'Red Hat Display', sans-serif;
             .order{
                 display: flex;
                 align-items: center;
-                justify-content: space-between;
-                padding: .4rem;
+                padding: 1.1rem .6rem;
                 background: $very-pale-blue;
                 border-radius: .7rem;
+                margin-bottom: 1.2rem;
 
                 img{
-                    width: 2.5rem;
+                    width: 2.6rem;
+                    margin-right: 1rem;
                 }
 
-                &-text{
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: flex-start;
+                h3{
+                    color: $dark-blue;
                     text-align: left;
+                    font-size: .9rem;
+                    line-height: 1.5;
+                    flex: 1;
 
-                    h3{
-                        color: $dark-blue;
-                        font-size: .9rem;
-                    }
-
-                    p{
+                    span{
                         font-size: .8rem;
-                        color: $desaturated-blue;
+                        font-weight: 300;
                     }
                 }
 
@@ -100,6 +101,14 @@ $font-family: 'Red Hat Display', sans-serif;
                     color: $bright-blue;
                     text-decoration: underline;
                     font-size: .8rem;
+                    font-weight: 700;
+                    transition: .35 ease-in;
+                    cursor: pointer;
+
+                    &:hover{
+                        text-decoration: none;
+                        color: $desaturated-blue;
+                    }
                 }
             }
 
@@ -108,10 +117,51 @@ $font-family: 'Red Hat Display', sans-serif;
                 text-decoration: none;
                 color: #fff;
                 background: $bright-blue;
-                padding: .7rem;
+                padding: .8rem;
                 border-radius: .5rem;
                 font-size: .8rem;
+                box-shadow: 0 .7rem 2rem $desaturated-blue;
+                font-weight: 700;
+                transition: background .35s;
+
+                &:hover,
+                &:active
+                {
+                    background: $desaturated-blue;
+                }
             }
+
+            .cancel{
+                display: inline-block;
+                margin-top: 1.2rem;
+                text-decoration: none;
+                color: $desaturated-blue;
+                font-weight: 700;
+                font-size: .9rem;
+                transition: color .35s;
+
+                &:hover{
+                    color: $dark-blue;
+                }
+            }
+        }
+    }
+}
+
+.attribution{
+    text-align: center;
+    margin-top: 1.2rem;
+    font-size: .9rem;
+
+    a{
+        font-size: .9rem;
+        text-decoration: none;
+        color: $desaturated-blue;
+        transition: color .35s;
+
+        &:hover,
+        &:active{
+            color: $dark-blue;
         }
     }
 }

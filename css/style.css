@@ -13,7 +13,11 @@
 .container {
   min-height: 100vh;
   background-color: #e0e8ff;
-  padding: 3rem 1.5rem;
+  background-image: url("/images/pattern-background-desktop.svg");
+  background-position: top right;
+  background-size: 100% 30%;
+  background-repeat: no-repeat;
+  padding: 3.5rem 1.2rem;
 }
 
 .card {
@@ -55,7 +59,7 @@
   font-size: 1.3rem;
   line-height: 1.1;
   color: #1f2f56;
-  margin-bottom: 1.2rem;
+  margin-bottom: 1rem;
   font-weight: 900;
   text-transform: capitalize;
 }
@@ -74,40 +78,30 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: .4rem;
+  padding: 1.1rem .6rem;
   background: #f5f7ff;
   border-radius: .7rem;
+  margin-bottom: 1.2rem;
 }
 
 .card-content-text .order img {
-  width: 2.5rem;
+  width: 2.6rem;
+  margin-right: 1rem;
 }
 
-.card-content-text .order-text {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  text-align: left;
-}
-
-.card-content-text .order-text h3 {
+.card-content-text .order h3 {
   color: #1f2f56;
+  text-align: left;
   font-size: .9rem;
+  line-height: 1.5;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
-.card-content-text .order-text p {
+.card-content-text .order h3 span {
   font-size: .8rem;
-  color: #7280a7;
+  font-weight: 300;
 }
 
 .card-content-text .order .btn {
@@ -116,6 +110,15 @@
   color: #3829e0;
   text-decoration: underline;
   font-size: .8rem;
+  font-weight: 700;
+  -webkit-transition: .35 ease-in;
+  transition: .35 ease-in;
+  cursor: pointer;
+}
+
+.card-content-text .order .btn:hover {
+  text-decoration: none;
+  color: #7280a7;
 }
 
 .card-content-text .payment {
@@ -123,8 +126,50 @@
   text-decoration: none;
   color: #fff;
   background: #3829e0;
-  padding: .7rem;
+  padding: .8rem;
   border-radius: .5rem;
   font-size: .8rem;
+  -webkit-box-shadow: 0 0.7rem 2rem #7280a7;
+          box-shadow: 0 0.7rem 2rem #7280a7;
+  font-weight: 700;
+  -webkit-transition: background .35s;
+  transition: background .35s;
+}
+
+.card-content-text .payment:hover, .card-content-text .payment:active {
+  background: #7280a7;
+}
+
+.card-content-text .cancel {
+  display: inline-block;
+  margin-top: 1.2rem;
+  text-decoration: none;
+  color: #7280a7;
+  font-weight: 700;
+  font-size: .9rem;
+  -webkit-transition: color .35s;
+  transition: color .35s;
+}
+
+.card-content-text .cancel:hover {
+  color: #1f2f56;
+}
+
+.attribution {
+  text-align: center;
+  margin-top: 1.2rem;
+  font-size: .9rem;
+}
+
+.attribution a {
+  font-size: .9rem;
+  text-decoration: none;
+  color: #7280a7;
+  -webkit-transition: color .35s;
+  transition: color .35s;
+}
+
+.attribution a:hover, .attribution a:active {
+  color: #1f2f56;
 }
 /*# sourceMappingURL=style.css.map */
