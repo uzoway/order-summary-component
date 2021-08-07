@@ -184,3 +184,10 @@ $font-family: 'Red Hat Display', sans-serif;
         padding: 3.5rem 10rem;
     }
 }
+
+/* Large Tablet styles */
+@media screen and (min-width: 860px){
+    .container {
+        padding: 3.5rem 15rem;
+    }
+}
