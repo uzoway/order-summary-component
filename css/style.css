@@ -89,7 +89,7 @@
   margin-right: 1rem;
 }
 
-.card-content-text .order h3 {
+.card-content-text .order h2 {
   color: #1f2f56;
   text-align: left;
   font-size: .9rem;
@@ -99,7 +99,7 @@
           flex: 1;
 }
 
-.card-content-text .order h3 span {
+.card-content-text .order h2 span {
   font-size: .8rem;
   font-weight: 300;
 }
@@ -217,10 +217,10 @@
   .card-content-text .order {
     padding: 1.3rem .9rem;
   }
-  .card-content-text .order h3 {
+  .card-content-text .order h2 {
     font-size: 1rem;
   }
-  .card-content-text .order h3 span {
+  .card-content-text .order h2 span {
     font-size: .9rem;
   }
 }
